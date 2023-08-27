@@ -6,7 +6,7 @@ const DigitButton = ({ dispatch, digit }) => {
   return (
     <button
       onClick={() => {
-        dispatch({ type: ACTIONS.ADD_DIGIT, payload: { digit } });
+        dispatch({ type: ACTIONS.DIGIT, pressedDigit: { digit } });
       }}
     >
       {digit}

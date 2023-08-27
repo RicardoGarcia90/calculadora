@@ -6,7 +6,7 @@ const OperationButton = ({ dispatch, operation }) => {
   return (
     <button
       onClick={() => {
-        dispatch({ type: ACTIONS.CHOOSE_OPERATION, payload: { operation } });
+        dispatch({ type: ACTIONS.OPERATION, pressedDigit: { operation } });
       }}
     >
       {operation}
